@@ -42,11 +42,11 @@ def check_status_code():
 
     if last_status_code == 200 and current_status_code != 200:
         # Status code has changed from 200 to something else
-        message =  f"\n**[STEAM SERVER ERROR]**\n\t**Status Code**: **`{current_status_code}`**\n\t**Server status**: **`DOWN`**\n\t**Date/time**: {current_time}\n**Message**:\n\tSteam servers are down nigga ***Nokie crying noises*** :NoOoOo:"
+        message =  f"\n**[STEAM SERVER ERROR]**\n\t**Status Code**: **`{current_status_code}`**\n\t**Server status**: **`DOWN`**\n\t**Date/time**: {current_time}\n**Message**:\n\tSteam servers are down ***Nokie crying noises*** :NoOoOo:"
         send_discord_alert(message, "Steam Server Status by RoMinjun")
     elif last_status_code != 200 and current_status_code == 200:
         # Status code has returned to 200
-        message = f"\n**[STEAM SERVER INFO]**\n\t**Status Code**: **`{current_status_code}`**\n\t**Server status**: **`UP`**\n\t**Date/time**: *`{current_time}`*\n**Message**:\n\tSteam servers are up again nigga ***Happy Nokie Noises*** :widenokieHappy:"
+        message = f"\n**[STEAM SERVER INFO]**\n\t**Status Code**: **`{current_status_code}`**\n\t**Server status**: **`UP`**\n\t**Date/time**: *`{current_time}`*\n**Message**:\n\tSteam servers are up again ***Happy Nokie Noises*** :widenokieHappy:"
         send_discord_alert(message, "Steam Server Status by RoMinjun")
 
     # Update the status code in the file
